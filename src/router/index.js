@@ -3,7 +3,8 @@ import VueRouter from 'vue-router'
 import SignUpForm from '@/components/SignUpForm'
 import Timelines from '@/components/TweetTimelines'
 import post from '@/components/PostTweet'
-
+import { IconsPlugin } from 'bootstrap-vue'
+Vue.use(IconsPlugin)
 Vue.use(VueRouter)
 
 const routes = [

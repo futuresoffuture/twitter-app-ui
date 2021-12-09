@@ -16,7 +16,7 @@ export default {
 <style>
   .btn-primary {
     color: #fff;
-    background-color: #0d6efd;
+    background-color: rgb(29, 155, 240) !important;
     border-color: #0d6efd;
     margin-left: 2%;
     width: 30%;
