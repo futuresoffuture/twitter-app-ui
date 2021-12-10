@@ -37,11 +37,11 @@ export default {
 			console.log(this.$route.query.userId);
 			axios
 				.get(
-					"https://d66b101c-1309-44e5-a596-566132b5dc06.mock.pstmn.io/twitter-app/timelines"
+					`http://localhost:8080/timelines?userId=${this.$route.query.userId}`
 				)
 				.then(response => {
-					console.log(response.data.tweets);
-					this.tweets = response.data.tweets;
+					console.log(response.data);
+					this.tweets = response.data;
 					console.log(this.tweets[0].message);
 				})
 				.catch(err => {

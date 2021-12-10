@@ -71,14 +71,12 @@ export default {
 			event.preventDefault();
 			axios
 				.post(
-					"https://d66b101c-1309-44e5-a596-566132b5dc06.mock.pstmn.io/twitter-app/user",
+					"http://localhost:8080/user",
 					{
-						user: {
-							firstName: this.form.firstName,
-							lastName: this.form.lastName,
-							password: this.form.password,
-							userId: this.form.email
-						}
+						firstName: this.form.firstName,
+						lastName: this.form.lastName,
+						password: this.form.password,
+						userId: this.form.email
 					}
 				)
 				.then(function(response) {

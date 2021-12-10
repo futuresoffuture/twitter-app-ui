@@ -38,11 +38,9 @@ export default {
 			event.preventDefault();
 			axios
 				.post(
-					"https://d66b101c-1309-44e5-a596-566132b5dc06.mock.pstmn.io/twitter-app/tweet",
+					`http://localhost:8080/tweet?userId=${this.$route.query.userId}`,
 					{
-						tweet: {
-							message: this.tweet
-						}
+						message: this.tweet
 					}
 				)
 				.then(function(response) {
