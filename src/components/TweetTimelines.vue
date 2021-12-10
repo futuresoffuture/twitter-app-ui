@@ -37,7 +37,7 @@ export default {
 			console.log(this.$route.query.userId);
 			axios
 				.get(
-					`http://localhost:8080/timelines?userId=${this.$route.query.userId}`
+					`http://localhost:8090/twitter-app/timelines?userId=${this.$route.query.userId}`
 				)
 				.then(response => {
 					console.log(response.data);

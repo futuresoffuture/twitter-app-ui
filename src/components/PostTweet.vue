@@ -38,7 +38,7 @@ export default {
 			event.preventDefault();
 			axios
 				.post(
-					`http://localhost:8080/tweet?userId=${this.$route.query.userId}`,
+					`http://localhost:8090/twitter-app/tweet?userId=${this.$route.query.userId}`,
 					{
 						message: this.tweet
 					}

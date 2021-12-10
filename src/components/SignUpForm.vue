@@ -17,7 +17,7 @@
 					></b-form-input>
 				</b-form-group>
 
-				<b-form-group id="input-group-2" label="Your Fist Name:" label-for="input-2">
+				<b-form-group id="input-group-2" label="Your First Name:" label-for="input-2">
 					<b-form-input
 						id="input-2"
 						v-model="form.firstName"
@@ -71,7 +71,7 @@ export default {
 			event.preventDefault();
 			axios
 				.post(
-					"http://localhost:8080/user",
+					"http://localhost:8090/twitter-app/user",
 					{
 						firstName: this.form.firstName,
 						lastName: this.form.lastName,
